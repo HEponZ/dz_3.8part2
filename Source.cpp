@@ -53,7 +53,18 @@ int main()
 			flat1 = flat2;
 			break;
 		case COMPARE_PRICE:
-			flat1 > flat2;
+			if (flat1 > flat2)
+			{
+				cout << "Цена квартиры 1 больше, чем цена 2\n";
+			}
+			else if (flat1 < flat2)
+			{
+				cout << "Цена квартиры 2 больше, чем цена 1\n";
+			}
+			else
+			{
+				cout << "Цены равны или типы разные\n";
+			}
 			break;
 		case PRINT:
 			printf("Площадь №1 - %dm^3\nЦена - %d$\nПлощадь №2 - %dm^3\nЦена - %d$\n", flat1.get_square(), flat1.get_price(), flat2.get_square(), flat2.get_price());

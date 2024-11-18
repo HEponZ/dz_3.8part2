@@ -37,4 +37,5 @@ public:
 
 	friend bool operator==(const Flat& over1, const Flat& over2);
 	friend bool operator>(const Flat& over1, const Flat& over2);
+	friend bool operator<(const Flat& over1, const Flat& over2);
 };
